@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>Panigrahi Furniture</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#custom">Customization</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button onclick="openSignIn()">Sign In</button></li>
+                <li><button onclick="openSignUp()">Sign Up</button></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <section class="home">
+            <div class="slideshow-container">
+                <div class="slide" style="background-image: url('images/images/OIP (1).jpeg');"></div>
+                <div class="slide" style="background-image: url('images/images/th (2).jpeg');"></div>
+                <div class="slide" style="background-image: url('images/images/th.jpeg');"></div>
+            </div>
+            <div class="overlay">
+                <h1>Stylish & Comfortable Furniture</h1>
+                <p>Upgrade your home with our exclusive furniture collections.</p>
+                <button onclick="scrollToProducts()">Shop Now</button>
+            </div>
+        </section>
+        
+        
+        
+
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <section class="about-us">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>We provide high-quality, stylish, and sustainable furniture for your home and office.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/images/OIP.jpeg" alt="Furniture Display">
+                </div>
+            </div>
+        </section>
+        
+    </section>
+    <!-- Product Categories-->
+    <section id="shop">
+        <h2>Our Collections</h2>
+        <div class="categories">
+            <a href="file://wsl.localhost/Ubuntu/home/palin/repos/Furniture/living.html"><button>Living Room</button></a>
+            <a href="file://wsl.localhost/Ubuntu/home/palin/repos/Furniture/bedroom.html"><button>Bedroom</button></a>
+            <a href="file://wsl.localhost/Ubuntu/home/palin/repos/Furniture/office.html"><button>Office</button></a>
+            <a href="file://wsl.localhost/Ubuntu/home/palin/repos/Furniture/outdoor.html"><button>Outdoor</button></a>
+        </div>
+    </section>
+    
+
+    <!-- Customization Services -->
+    <section id="custom">
+        <h2>Custom Furniture</h2>
+        <p>Have a unique design in mind? Contact us to bring your ideas to life.</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Amazing quality and excellent service!" - Jane D.</p>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2>Home Decor Tips</h2>
+        <article>
+            <h3>How to Choose the Perfect Sofa</h3>
+            <p>Find the best sofa that fits your space and lifestyle...</p>
+        </article>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: panigrahipalin@gmail.com</p>
+        <p>Phone: 6371551027</p>
+        <iframe src="https://www.google.com/maps/embed?..." width="600" height="450"></iframe>
+    </section>
+    
+
+    <!-- Sign-In Modal -->
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignIn()">&times;</span>
+            <h2>Sign In</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Sign In</button>
+        </div>
+    </div>
+
+    <!-- Sign-Up Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignUp()">&times;</span>
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <button>Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="openSignIn()">Sign In</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
