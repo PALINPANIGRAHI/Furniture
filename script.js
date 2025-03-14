@@ -32,3 +32,13 @@ showSlides();
 function ScrollToContact(){
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
+//Discount pop up
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.getElementById("discountPopup").style.display = "block";
+    }, 3000); // Show popup after 3 seconds
+});
+
+function closePopup() {
+    document.getElementById("discountPopup").style.display = "none";
+}
