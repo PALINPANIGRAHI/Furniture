@@ -29,3 +29,6 @@ function showSlides() {
 }
 
 showSlides();
+function ScrollToContact(){
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
