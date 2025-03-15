@@ -11,7 +11,7 @@ header {
     padding: 15px;
     text-align: center;
 }
-
+/*navigate different features */
 nav ul {
     list-style: none;
     padding: 0;
@@ -43,12 +43,13 @@ section {
     padding: 20px;
     cursor: pointer;
 }
-
+/*testimonial section styling */
 .testimonial {
     background: #ddd;
     padding: 20px;
     margin: 20px;
 }
+
 
 footer {
     background: #333;

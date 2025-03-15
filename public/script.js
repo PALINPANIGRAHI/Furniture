@@ -93,8 +93,6 @@ window.openSignUp = openSignUp;
 
 
 
-
-
 function scrollToProducts() {
     document.getElementById("shop").scrollIntoView({ behavior: "smooth" });
 }
@@ -132,3 +130,5 @@ function closePopup() {
     document.getElementById("discountPopup").style.display = "none";
 }
 window.closePopup = closePopup;
+
+
