@@ -1,3 +1,5 @@
+
+// Modal Functions
 function openSignIn() {
     document.getElementById("signin-modal").style.display = "block";
 }
@@ -5,6 +7,8 @@ function openSignIn() {
 function closeSignIn() {
     document.getElementById("signin-modal").style.display = "none";
 }
+window.opemSignIn=openSignIn;
+
 function openSignUp() {
     document.getElementById("signup-modal").style.display = "block";
     document.getElementById("signin-modal").style.display = "none";
@@ -13,6 +17,10 @@ function openSignUp() {
 function closeSignUp() {
     document.getElementById("signup-modal").style.display = "none";
 }
+
+
+
+
 function scrollToProducts() {
     document.getElementById("shop").scrollIntoView({ behavior: "smooth" });
 }
