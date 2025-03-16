@@ -67,7 +67,9 @@ onAuthStateChanged(auth, (user) => {
 
 // Modal Control Functions
 function openSignIn() {
-    document.getElementById("signin-modal").style.display = "block";
+    document.getElementById("signup-modal").style.display="none";//hide sign up modal
+    document.getElementById("signin-modal").style.display = "block";//display sign in modal
+
 }
 
 function closeSignIn() {

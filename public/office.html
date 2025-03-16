@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bed Room Catalog</title>
+    <title>Office Catalog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,6 +62,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
 }
 
 /* Modal Content Box */
@@ -116,131 +117,106 @@
 </head>
 <body>
 
-    <h2>Bed Room Collection</h2>
+    <h2>Office Collection</h2>
     
     <div class="catalog">
-        <div class="product" onclick="openBedModal()">
-            <img src="images/images/living room/R.jpeg" alt="Bed">
-            <h3>Bed</h3>
+        <div class="product" onclick="openDeskModal()">
+            <img src="images/lamp/office/101370ed-e41a-4c8a-a5ce-76e7741250cc.webp" alt="Desk">
+            <h3>Desk</h3>
             <p>$499</p>
         </div>
-        <div class="product" onclick="openWardrobeModal()">
-            <img src="images/images/living room/OIP (6).jpeg" alt="Wardrobe">
-            <h3>Wardrobe</h3>
+        <div class="product" onclick="openChairModal()">
+            <img src="images/lamp/office/a4b52caa-036d-4921-8a61-045bfb426dd4.webp" alt="Chair">
+            <h3>Chair</h3>
             <p>$299</p>
         </div>
-        <div class="product" onclick="openDresserModal()">
-            <img src="images/images/living room/OIP (4).jpeg" alt="Dresser">
-            <h3>Dresser</h3>
+        <div class="product" onclick="openCabinetModal()">
+            <img src="images/lamp/office/e873969a-7080-48ca-bddc-754e69638205.webp" alt="Cabinet">
+            <h3>Cabinet</h3>
             <p>$199</p>
         </div>
         <div class="product" onclick="openLampModal()">
-            <img src="images/images/OIP (5).jpeg" alt="Elegant Lamp">
-            <h3>Elegant Lamp</h3>
+            <img src="images/lamp/office/8ffcd61f-b0e3-42d2-adb2-635c8145d2a7.webp" alt="Elegant Lamp">
+            <h3>Lamp</h3>
             <p>$79</p>
         </div>
     </div>
 
     <a href="index.html" class="back-button">← Back to Home</a>
-    <!-- Modal for sofa(Hidden by Default) -->
-<div id="BedModal" class="modal">
+<!-- Modal for Desk-->
+<div id="DeskModal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeBedModal()">&times;</span>
-        <h2>More Sofa Options</h2>
+        <span class="close" onclick="closeDeskModal()">&times;</span>
+        <h2>More Desk Options</h2>
         <div class="catalog">
             <div class="product">
-                <img src="sofa1.jpg" alt="Luxury Sofa">
-                <h3>Luxury Sofa</h3>
+                <img src="images/lamp/office/93f5bb42-11df-4945-a95c-9944c3a4a32b.webp" alt="Executive Desk">
+                <h3>Executive Desk</h3>
                 <p>$799</p>
             </div>
             <div class="product">
-                <img src="sofa2.jpg" alt="Comfort Sofa">
-                <h3>Comfort Sofa</h3>
+                <img src="images/lamp/office/f4f1de57-ff91-4f56-9165-550c59c80972.webp" alt="Compact Desk">
+                <h3>Compact" Desk</h3>
                 <p>$599</p>
             </div>
             <div class="product">
-                <img src="sofa3.jpg" alt="Compact Sofa">
-                <h3>Compact Sofa</h3>
+                <img src="images/lamp/office/a0ac7e61-3235-4c91-a578-5d27bc123385.webp" alt="Stylish Desk">
+                <h3>Stylish Desk</h3>
                 <p>$499</p>
             </div>
-            <div class="product">
-                <img src="sofa4.jpg" alt="Napper Sofa">
-                <h3>Napper Sofa</h3>
-                <p>$800</p>
-            </div>
-            <div class="product">
-                <img src="sofa3.jpg" alt="Fliper Sofa">
-                <h3>Fliper Sofa</h3>
-                <p>$699</p>
-            </div>
-            <div class="product">
-                <img src="sofa3.jpg" alt="Snoozer Sofa">
-                <h3>Snoozer Sofa</h3>
-                <p>$499</p>
-            </div>
-            <div class="product">
-                <img src="sofa3.jpg" alt="Manila Sofa">
-                <h3>Manila Sofa</h3>
-                <p>$999</p>
-            </div>
+            
+            
+            
         </div>
     </div>
 </div>
-<!--Table Modal-->
-<div id="WardrobeModal" class="modal">
+<!--Chair Modal-->
+<div id="ChairModal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeWardrobeModal()">&times;</span>
+        <span class="close" onclick="closeChairModal()">&times;</span>
         <h2>More Table Options</h2>
         <div class="catalog">
             <div class="product">
-                <img src="images/images/OIP (4).jpeg" alt="Brookyln Table">
-                <h3>Brookyln Table</h3>
+                <img src="images/lamp/office/29e84ea4-e340-41a3-a4a4-99aac513c6d8.webp" alt="Modern Chair">
+                <h3>Modern chair</h3>
                 <p>$799</p>
             </div>
             <div class="product">
-                <img src="images/images/OIP (6).jpeg" alt="Chalet Table">
-                <h3>Chalet Table</h3>
+                <img src="images/lamp/office/26d1cf93-1223-4b74-9e4d-8453487495b7.webp" alt="Luxury Chair">
+                <h3>Luxury Chair</h3>
                 <p>$599</p>
             </div>
             <div class="product">
-                <img src="images/images/OIP (7).jpeg" alt="Hartford Table">
-                <h3>Hartford Table</h3>
+                <img src="images/lamp/office/54225b64-2a5e-4e35-9201-871d0b52627c.webp" alt="Task chair">
+                <h3>Task Chair</h3>
                 <p>$499</p>
             </div>
-            <div class="product">
-                <img src="images/images/OIP (8).jpeg" alt="Montanna Table">
-                <h3>Montanna Table</h3>
-                <p>$800</p>
-            </div>
+            
         </div>
     </div>
 </div>
 <!--Dresser Modal-->
-<div id="DresserModal" class="modal">
+<div id="CabinetModal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeDresserModal()">&times;</span>
+        <span class="close" onclick="closeCabinetModal()">&times;</span>
         <h2>More Table Options</h2>
         <div class="catalog">
             <div class="product">
-                <img src="images/images/OIP (4).jpeg" alt="Brookyln Table">
-                <h3>Brookyln Table</h3>
+                <img src="images/lamp/office/th.jpeg" alt="Filling Cabinet">
+                <h3>Filling Cabinet</h3>
                 <p>$799</p>
             </div>
             <div class="product">
-                <img src="images/images/OIP (6).jpeg" alt="Chalet Table">
-                <h3>Chalet Table</h3>
+                <img src="images/lamp/office/th (1).jpeg" alt="Storage Cabinet">
+                <h3>Storage Cabinet</h3>
                 <p>$599</p>
             </div>
             <div class="product">
-                <img src="images/images/OIP (7).jpeg" alt="Hartford Table">
-                <h3>Hartford Table</h3>
+                <img src="images/lamp/office/th (2).jpeg" alt="Display Cabinet">
+                <h3>Display Cabinet</h3>
                 <p>$499</p>
             </div>
-            <div class="product">
-                <img src="images/images/OIP (8).jpeg" alt="Montanna Table">
-                <h3>Montanna Table</h3>
-                <p>$800</p>
-            </div>
+        
         </div>
     </div>
 </div>
@@ -251,82 +227,78 @@
         <h2>More Table Options</h2>
         <div class="catalog">
             <div class="product">
-                <img src="images/images/OIP (4).jpeg" alt="Brookyln Table">
-                <h3>Brookyln Table</h3>
+                <img src="images/lamp/office/th (3).jpeg" alt="Desk Lamp">
+                <h3>Desk Lamp</h3>
                 <p>$799</p>
             </div>
             <div class="product">
-                <img src="images/images/OIP (6).jpeg" alt="Chalet Table">
-                <h3>Chalet Table</h3>
+                <img src="images/lamp/office/th (5).jpeg" alt="Floor Lamp">
+                <h3>Floor Lamp</h3>
                 <p>$599</p>
             </div>
             <div class="product">
-                <img src="images/images/OIP (7).jpeg" alt="Hartford Table">
-                <h3>Hartford Table</h3>
+                <img src="images/lamp/office/th (4).jpeg" alt="Clip-on Lamp">
+                <h3>Clip-on Lamp/h3>
                 <p>$499</p>
             </div>
-            <div class="product">
-                <img src="images/images/OIP (8).jpeg" alt="Montanna Table">
-                <h3>Montanna Table</h3>
-                <p>$800</p>
-            </div>
+            
         </div>
     </div>
 </div>
 
 <script>
     //Bed Modal
-    function openBedModal() {
-        document.getElementById("BedModal").style.display = "block";
+    function openDeskModal() {
+        document.getElementById("DeskModal").style.display = "block";
         
     }
 
-    function closeBedModal() {
-        document.getElementById("BedModal").style.display = "none";
+    function closeDeskModal() {
+        document.getElementById("DeskModal").style.display = "none";
         
     }
 
     // Close modal when clicking outside the content
     window.onclick = function(event) {
-        let modal = document.getElementById("BedModal");
+        let modal = document.getElementById("DeskModal");
         if (event.target === modal) {
             modal.style.display = "none";
         }
         
     }
     //Wardrobe Table Modal
-    function openWardrobeModal() {
-        document.getElementById("WardrobeModal").style.display = "block";
+    function openChairModal() {
+        document.getElementById("ChairModal").style.display = "block";
         
     }
 
-    function closeWardrobeModal() {
-        document.getElementById("WardrobeModal").style.display = "none";
+    function closeChairModal() {
+        document.getElementById("ChairModal").style.display = "none";
         
     }
 
     // Close modal when clicking outside the content
     window.onclick = function(event) {
-        let modal = document.getElementById("WardrobeModal");
+        let modal = document.getElementById("ChairModal");
         if (event.target === modal) {
             modal.style.display = "none";
         }
         
     }
-    //Dresser modal
-    function openDresserModal() {
-        document.getElementById("DresserModal").style.display = "block";
+    //Cabinet modal
+    function openCabinetModal() {
+        document.getElementById("CabinetModal").style.display = "block";
         
     }
 
-    function closeDresserModal() {
-        document.getElementById("DresserModal").style.display = "none";
+    function closeCabinetModal() {
+        document.getElementById("CabinetModal").style.display = "none";
         
     }
 
     // Close modal when clicking outside the content
     window.onclick = function(event) {
-        let modal = document.getElementById("DresserModal");
+        let modal = document.getElementById("CabinetModal");
         if (event.target === modal) {
             modal.style.display = "none";
         }
