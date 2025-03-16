@@ -1,8 +1,8 @@
-// Import Firebase Modules
+//Firebase Modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
-// Your Firebase Configuration (Replace with Your Own)
+//Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAVj0IyZENuwuEzsyYMKzu87or1xwsYINg",
     authDomain: "furniture-843c4.firebaseapp.com",
@@ -56,7 +56,7 @@ document.getElementById("logout-button").addEventListener("click", function () {
     });
 });
 
-// Check User Login State
+//Function  to Check User Login State
 onAuthStateChanged(auth, (user) => {
     if (user) {
         document.getElementById("logout-button").style.display = "block";
@@ -87,18 +87,16 @@ function closeSignUp() {
 }
 window.closeSignUp=closeSignUp;
 
-// Make functions globally accessible
+
 window.openSignIn = openSignIn;
 window.openSignUp = openSignUp;
 
-
-
-
-
+//Function that will scroll to shop section
 function scrollToProducts() {
     document.getElementById("shop").scrollIntoView({ behavior: "smooth" });
 }
 window.scrollToProducts=scrollToProducts;
+//Slideshow Function
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -112,6 +110,7 @@ function showSlides() {
 }
 
 showSlides();
+//Function that wiil scroll to Contact Section
 function ScrollToContact(){
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
